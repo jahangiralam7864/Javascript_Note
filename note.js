@@ -212,6 +212,27 @@ student1.totalmarks = 100;
 console.log(student1);
 
 
+//kono array object ar small valo check (Object)
+//Object er vitor theke sob theke soto value bar korty use korbo
+const phones = [
+    {name: "samsung",price: "30000",camera: "10",storage: 32},
+    {name: "walton",price: "15000",camera: "12",storage: 42},
+    {name: "shaomi",price: "34500",camera: "120",storage: 132},
+    {name: "opp",price: "3000",camera: "11",storage: 34},
+    {name: "nokia",price: "4000",camera: "18",storage: 52},
+    {name: "htc",price: "24232",camera: "120",storage: 32}
+];
+let cheapest = phones[0];
+for (const phone of phones){
+    //compare price only..
+    if (phone.price < cheapest.price) {
+        cheapest = phone;
+    }
+}
+
+console.log(cheapest);
+
+
 //switch infomation (switch)
 //switch diye kono kisu mach kore print korbo. potita case check kore jodi condition mach na kore taile print hobe na, onno case check korbe, are jodi kono case e mill pawa na jay, taile default print hobe.
 var color = 'green';
@@ -670,7 +691,7 @@ function woodCalculator(chairQuantity,tableQuantity,bedQuantity) {
 const quntity = woodCalculator(1,1,1);
 console.log(quntity);//result = 63;
 
-
+//kono number er vagses check (vagses)
 //Jodi 1-50 pojonto kono sonkha diclear kori taile, oi sonkhar vitor kisu sonkha diye vag korle vagses jodi 0 hoi, taile oi sonkhar poriborte kisu contant print hobe. 
 for (let i = 0; i <= 50; i++) {
     if (i % 3 == 0 && i % 5 == 0) {
@@ -690,3 +711,23 @@ for (let i = 0; i <= 50; i++) {
     }
     
 }
+
+//kono array object ar small valo check (Object)
+//Object er vitor theke sob theke soto value bar korty use korbo
+const phones = [
+    {name: "samsung",price: "30000",camera: "10",storage: 32},
+    {name: "walton",price: "15000",camera: "12",storage: 42},
+    {name: "shaomi",price: "34500",camera: "120",storage: 132},
+    {name: "opp",price: "3000",camera: "11",storage: 34},
+    {name: "nokia",price: "4000",camera: "18",storage: 52},
+    {name: "htc",price: "24232",camera: "120",storage: 32}
+];
+let cheapest = phones[0];
+for (const phone of phones){
+    //compare price only..
+    if (phone.price < cheapest.price) {
+        cheapest = phone;
+    }
+}
+
+console.log(cheapest);
