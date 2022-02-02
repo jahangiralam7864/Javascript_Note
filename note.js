@@ -156,7 +156,8 @@ var lastName = 200;
 var result = biygKorbo(fristName, lastName);
 console.log(result);
 
-//function diye kono valu k sum kora (+)
+//function diye kono valu k sum kora (+) (sum)
+//onek gulo sonkha jog korty sum use korbo
 function biygKorbo(jahangir, alam) {
     console.log(jahangir, alam);
     var total = jahangir + alam;
@@ -166,6 +167,14 @@ var fristName = 100;
 var lastName = 200;
 var result = biygKorbo(fristName, lastName);
 console.log(result);
+//or
+function add(num1, num2) {
+    const sum = num1 + num2;
+    return sum;
+}
+const firstNum = add(20,30);
+const secoundNum = add(30,30);
+console.log(firstNum, secoundNum);
 
 //object dicleared infomation (object)
 //(*) object 2 vabe diclear korty pari 
@@ -620,3 +629,64 @@ function toUniqueArray(colors){
 
 var colorsUnique= toUniqueArray(colors);
 console.log(colorsUnique); // ["red","green"]
+
+
+//revers diye , amara kono stirng k vange dakhi. (revers)
+const greetings = "hello, how are You?" ;
+function reverseString(text) {
+    let lowest = '';
+    for (const letters of text) {
+        console.log(letters);
+        lowest = letters + lowest;
+    }
+}
+const revers = reverseString(greetings);
+console.log(revers);
+
+
+//munltiply kono variable ba array k jodi function diye gun korty cai. (multiply)
+function multiple(num1,num2,num3) {
+    const result = num1 * num2* num3;
+    return result;
+}
+
+const firstNum = multiple(20,30,40);
+const secoundNum = multiple(30,40,50);
+console.log(firstNum, secoundNum);
+
+// amra kono kisur dam jante caile ba tar qundity jante caile ai mathord use korbo. (qundity and cost)
+function woodCalculator(chairQuantity,tableQuantity,bedQuantity) {
+    const parChairWood = 3;//total cost ba items.
+    const parTableWood = 10;//total cost ba items.
+    const parbedWood = 50;//total cost ba items.
+    //  WoodCalculation
+    const chair = chairQuantity * parChairWood;
+    const table = tableQuantity * parTableWood;
+    const bed = bedQuantity * parbedWood;
+    const total = chair + table + bed;
+    return total;
+}
+
+const quntity = woodCalculator(1,1,1);
+console.log(quntity);//result = 63;
+
+
+//Jodi 1-50 pojonto kono sonkha diclear kori taile, oi sonkhar vitor kisu sonkha diye vag korle vagses jodi 0 hoi, taile oi sonkhar poriborte kisu contant print hobe. 
+for (let i = 0; i <= 50; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+        console.log("alam");
+    } 
+    else if (i % 3 == 0) {
+        console.log("jahangir");
+    }
+    else if (i % 5 == 0) {
+        console.log("Rafi");
+    }
+    else if (i % 10 == 0) {
+        console.log("Hridoy");
+    }
+    else{
+        console.log(i);// jodi uporer kono sonkhar sathe vag kore vagses 0 na hoi taile else ar value print hobe.
+    }
+    
+}
