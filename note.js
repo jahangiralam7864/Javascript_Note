@@ -1,0 +1,1 @@
+console.log("jahangir alam hoy lorem");
