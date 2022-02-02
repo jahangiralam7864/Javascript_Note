@@ -4,7 +4,7 @@
 var startLight = 'md jahangir alam';
 console.log(startLight);
 
-// Array infomation (arra
+// Array infomation (array)
 // (*) amra jodi onek gulo value k ak sathe rekhe kaj korty cai tar jonno amara array use kore thaki example:
 
 // (**) akhon er modde theke jodi kono datar koto number sirial a ase seta check korty amar indexOf use korbo.
@@ -593,3 +593,30 @@ var ages = [80,10,12,13,14,15,16,17];
 var oldest = largestNumber(ages);
 console.log('return',oldest);
 
+
+// Amra for use kore 2 vabe Unique number check korty pari.(Unique)
+function toUniqueArray(a){
+    var newArr = [];
+    for (var i = 0; i < a.length; i++) {
+        if (newArr.indexOf(a[i]) === -1) {
+            newArr.push(a[i]);
+        }
+    }
+  return newArr;
+}
+var colors = ["red","red","green","green","green"];
+var colorsUnique=toUniqueArray(colors); // ["red","green"]
+//or
+var colors = ["red","red","green","green","green"];
+function toUniqueArray(colors){
+    var newArr = [];
+    for (const jahangir of colors) {
+        if (newArr.indexOf(jahangir) == -1) {
+            newArr.push(jahangir);
+        }
+    }
+  return newArr;
+}
+
+var colorsUnique= toUniqueArray(colors);
+console.log(colorsUnique); // ["red","green"]
