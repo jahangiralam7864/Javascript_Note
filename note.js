@@ -712,7 +712,7 @@ for (let i = 0; i <= 50; i++) {
     
 }
 
-//kono array object ar small valo check (Object)
+//kono array object ar small value check (Object)
 //Object er vitor theke sob theke soto value bar korty use korbo
 const phones = [
     {name: "samsung",price: "30000",camera: "10",storage: 32},
@@ -731,3 +731,20 @@ for (const phone of phones){
 }
 
 console.log(cheapest);
+
+
+//product + quntity check (quntity check)
+//kono product er product ba quntity gun kore koto taka paid hobe ,seta ber korbo,
+const cart = [
+    {name: "laptop",price: "30000",camera: "10",storage: 32, quantity:1},
+    {name: "watch",price: "15000",camera: "12",storage: 42, quantity:3},
+    {name: "phone",price: "34500",camera: "120",storage: 132, quantity:1},
+    {name: "shirt",price: "3000",camera: "11",storage: 34, quantity:2},
+];
+let cartTotal = 0;
+for (const product of cart){
+    console.log(product);
+    const productTotal = product.price * product.quantity;
+    cartTotal = cartTotal + productTotal;
+}
+console.log(cartTotal);
