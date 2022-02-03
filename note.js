@@ -777,3 +777,14 @@ for (const product of cart){
     cartTotal = cartTotal + productTotal;
 }
 console.log(cartTotal);
+
+//
+//kono array kono niddisto sonkhar por value print korty use korbo
+const larNumber = [20,30,40,80,85,83,88,90];
+for (let i = 0; i < larNumber.length; i++) {
+    const element = larNumber[i];
+    if (element >= 80) {
+        console.log(element);
+    }
+    
+}

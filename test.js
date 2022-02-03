@@ -16,10 +16,12 @@
 
 // 8. declare an array . number of elements. update or change 4th position element.add or remove element. check whether a specific value exists in the array. // array sob upadan dekhate hobe. 4 number position er element k change korty hobe. kono element k add or remove korty hobe.
 
-// 9. use any for loop to display every elements of an array // array sob upadan dekhar jonno j kono akta for loop use korty hobe.
+ 
 
 // 10. you have an array of numbers. display only the numbers bigger than 80 // onek gulo number k akta array vitor nity hobe. than 80 thake kono boro sonkha k print korty hobe.
 
 // 11. write a function that takes three numbers and tetrans multiplication of the three numbers // function ar vitor 3 ta numbers nite hobe, than 3 number k gun kore print korty hobe.
 
 // 12. declare an object and change any property of that object. // kono object diclare kore sei value change korty hobe.
+
+// feetToInch
