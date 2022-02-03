@@ -330,6 +330,35 @@ const oddEven = 101; //ami bijor sonkha na true
 const oddPrint = oddNumber(oddEven);
 console.log('ami bijor sonkha na', oddPrint);
 
+//only display odd number including (odd)
+//amra jodi kono odd sonkha check korty cai tar jonno ai formula use korbo
+let text = 7;
+while ( text <= 19) {
+    if (text % 2 != 0) {
+      console.log(text);
+    }
+  text ++;
+}
+
+// kono jor sonkha print korty  caile amra ata use korbo (odd-event)
+function print() {
+    for (let i = 1; i <= 20; i++){
+      if (i % 2 == 0) {
+        console.log(i);
+      }
+    }
+  }
+  print();
+  //or
+  function print() {
+    for (let i = 1; i <= 20; i++){
+      if (i % 2 != 0) {
+        console.log(i);
+      }
+    }
+  }
+  print();
+  
 
 //factorial math (factorial)
 //factorial kore amra kono sonkhar nise joto sonkha ase sob gulo k gun korbo.
