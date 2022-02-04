@@ -778,7 +778,7 @@ for (const product of cart){
 }
 console.log(cartTotal);
 
-//
+// you have an array of numbers. display only the numbers bigger 
 //kono array kono niddisto sonkhar por value print korty use korbo
 const larNumber = [20,30,40,80,85,83,88,90];
 for (let i = 0; i < larNumber.length; i++) {
@@ -788,3 +788,77 @@ for (let i = 0; i < larNumber.length; i++) {
     }
     
 }
+
+
+// string ar value check (vowel check)
+// kono akta string ar vitor theke kisu sonkha jodi print korty cai,taile ai vabe use korbo
+function countVowel(myName) {
+    let count = 0;
+    for (let i = 0; i < myName.length; i++) {
+        const letter = myName[i].toLowerCase();
+        if (letter == "j" || letter == "l" ||letter == "n") {
+            count = count + 1;
+        }
+    }
+    return count; 
+}
+let myName = "Jahangir alam joy";
+console.log(countVowel(myName));// result 4
+
+// for loop ar difult way (string traking)
+function testing(words) {
+    let count = 0;
+    let point = ["x"];
+    for(const jahangir of words){
+        if (point.indexOf(jahangir) > -1) {
+            count = count + 1;   
+        }
+    }
+    return count;
+}
+let words = "xlorem ispump is a good result in a english word";
+console.log(testing(words));
+
+
+// poti kg mular dam dekhbo (par kg)
+// jodi poti kg mular dam 30 taka.
+// apni jodi 2 kg mula nity can taile poti kg 25 taka
+function mula(totalQundity){
+    if (typeof totalQundity != 'number') {
+        return "Please Inter your valid Number!"
+    }else if (totalQundity <= 0) {
+        return "Please Inter your valid Number!"
+    }else if (totalQundity >= 20) {
+        return "please Inter a largest number!"
+    }
+
+    let price = 0;
+    if(totalQundity <= 2){
+        price = totalQundity * 30;
+    }else{
+        price = totalQundity * 25;
+    }
+    return price;
+}
+console.log(mula(100));
+
+//calculation (bill-unites)
+//Electricity bill calculation infomation
+function electricity(unites) {
+    if (unites <= 100) {
+        bill = unites * 5;
+    }
+    else if (unites > 100) {
+        let first = 100 * 5;
+        let secound = (unites - 100) * 6;
+        bill = first + secound;
+    }
+    else if (unites > 200){
+        const first = 100 * 5;
+        const secend = 100 * 6;
+        const remainingBill = (unites -200) * 7;
+        bill = first + secound + remainingBill;
+    }
+    return bill;
+}
+console.log(electricity(130));

@@ -1,27 +1,54 @@
-// task assignment 4
 
-// 1. write 3 variables (number,string,boolean) // 3 ta 3 items ar veriable hoite hobe.
+//find if anybody got A+ form your friends
+//marks = [ 78,82,69];
 
-// 2. 2 variables using (let, const) // 2 tar modde kontar value change korty parbo, and kontar value change kort parbo na.
+function checkGPA(marks) {
+    for (let i = 0; i < marks.length; i++) {
+        const element = marks[i];
+        if (element >= 80) {
+            return true;
+        }
+    }
+    return false; // function ar vitor sob gulo value check kore jodi 80 theke boro thake tiale true print hobe are jodi na thake taile loop ar baire return korbe.
+}
+console.log(checkGPA([78,82,69]));
 
-// 3. simple math operations +,-,*,/,%  // ata korar por j result pabo, oi result akta variable a rekhe console.log kore print korbo.
+// find the largest element of an array
+// function largest(array) {
+//     let largest = array [0];
+//     for (const element of array){
+//         if (element > largest) {
+//             largest = element;
+//         }
+        
+//     }
+//     return largest;
+// }
 
-// 4. comparison (==, <,>, <=, >=, != ) // total 6 ta comparition korty hobe.
+// let array = [3,5,6,8,9];
+// console.log(largest(array));
 
-// 5. two conditions. case-1: fullfill both condition. case-2 fulfill atleast one condition. // kono condition dui pasei sotti hole && use korbo. and jodi kono ak pase akta condition sotti hoi taile || ai condition use korbo.
 
-// 6. if-else use kore kono akta condition jodi true hoi taile akta if ar value print hobe, and jodi na hoi taile else ar value print hobe.
+// function secendLargest(array) {
+//     let largest = array[0];
+//     let secoundLargest = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         let element = array[i];
+//         if (element > largest) {
+//             secoundLargest = largest;
+//             largest = element;
+//         }
+//         else if (element > secendLargest) {
+//             secendLargest = element;
+//         }
+        
+//     }
+//     return secoundLargest;
+// }
 
-// 7. while loop to display 7 to 19 numbers. only display odd number including 7 to 19 // 7 theke 19 pojonto print kore then oitar odd numbers print korbo.
+// let array = [3,5,6,8,9,11,14,17];
+// console.log(secendLargest(array));
 
-// 8. declare an array . number of elements. update or change 4th position element.add or remove element. check whether a specific value exists in the array. // array sob upadan dekhate hobe. 4 number position er element k change korty hobe. kono element k add or remove korty hobe.
+const hridoy = (["59, 66,88,75"]);
 
- 
 
-// 10. you have an array of numbers. display only the numbers bigger than 80 // onek gulo number k akta array vitor nity hobe. than 80 thake kono boro sonkha k print korty hobe.
-
-// 11. write a function that takes three numbers and tetrans multiplication of the three numbers // function ar vitor 3 ta numbers nite hobe, than 3 number k gun kore print korty hobe.
-
-// 12. declare an object and change any property of that object. // kono object diclare kore sei value change korty hobe.
-
-// feetToInch

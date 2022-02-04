@@ -133,7 +133,7 @@ let mobile = {
 mobile.color = "Gold";
 console.log(mobile);
     
-
+// 1.conversion - feet to inch
 function feetToInch(inch) {
     let feet = inch / 12;
     return feet;
@@ -141,3 +141,29 @@ function feetToInch(inch) {
 
 var inches = feetToInch(277.4400);
 console.log(inches);
+
+// 2. conversion - centemeter to meter
+function centimeterToMeter(centemeter) {
+    let calculation = centemeter / 100;
+    return calculation;
+}
+
+const meters = centimeterToMeter(300);
+console.log(meters);
+
+// 3.calculation 
+function pageRequirements(book1,book2,book3) {
+    var pages = book1 + book2 + book3;
+    return pages;
+}
+
+const totalPages = pageRequirements(100,200,300);
+console.log(totalPages);
+
+// const  friends = ['jahangir','rafi','hamid','Hridoy'];
+// // let i = friemds.length;
+// for (let i = 0; i < friends.length; i++) {
+//     const element = friends[i];
+//     console.log(element.length);
+   
+// }
